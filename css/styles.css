@@ -119,7 +119,8 @@ footer {
   padding: 192px 0;
   max-width: 1440px;
   margin: 0 auto;
-  background-image: url(../images/Dark-bg.png), url(../images/people-office\ 1.png);
+  background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/people-office.jpg);
 }
 .primery-title {
   font-weight: 500;
@@ -190,9 +191,28 @@ border-radius: 4px;
 .advantages-list:not(:last-child) {
   margin-right: 24px;
 }
-/* .advantages-list {
-  width: 264px;
-} */
+.advantages-list::before {
+  display: block;
+  content: '';
+  height: 112px;
+  margin-bottom: 8px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--footer-logo-color);
+}
+.icon-antenna::before {
+  background-image: url(../images/icon/antenna-1.svg);
+}
+.icon-clock::before {
+  background-image: url(../images/icon/clock-1.svg);
+}
+.icon-diagram::before {
+  background-image: url(../images/icon/diagram-1.svg);
+}
+.icon-astronaut::before {
+  background-image: url(../images/icon/astronaut-1.svg);
+}
 .title {
   font-weight: 700;
   font-size: 36px;
@@ -299,6 +319,8 @@ ol {
 .link-filtr-btn:focus {
   background-color: var(--accent-color-logo);
   color: var(--text-background-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* .portfplio-main {
   padding-top: 96px;
@@ -317,8 +339,18 @@ ol {
 .card-set-list {
   flex-basis: calc((100% - 48px) / 3);
 }
+.card-set-list:hover,
+.card-set-list:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
 .card-set-text {
   padding: 32px 16px;
   border: 0.5px solid var(--footer-logo-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+
+/* ------------Customers------------------- */
+
+/* для посилань 
+display: flex;
+ justify-content: center; align-items: center;  width: 100%; height: 100%; */
