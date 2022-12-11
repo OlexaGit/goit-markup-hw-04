@@ -117,6 +117,9 @@ footer {
   color: var(--text-background-color);
   text-align: center;
   padding: 192px 0;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-image: url(../images/Dark-bg.png), url(../images/people-office\ 1.png);
 }
 .primery-title {
   font-weight: 500;
@@ -146,8 +149,16 @@ footer {
 }
 .modal-btn:hover,
 .modal-btn:focus {
-  background-color: var(--background-focus-btn);
+  background-color: var(--accent-color-logo);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 4px;
 }
+/* .modal-btn:local-link {
+  background-color: var(--background-focus-btn);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+} */
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -179,9 +190,9 @@ footer {
 .advantages-list:not(:last-child) {
   margin-right: 24px;
 }
-.advantages-list {
-  /* width: 264px; */
-}
+/* .advantages-list {
+  width: 264px;
+} */
 .title {
   font-weight: 700;
   font-size: 36px;
@@ -289,9 +300,9 @@ ol {
   background-color: var(--accent-color-logo);
   color: var(--text-background-color);
 }
-.portfplio-main {
-  /* padding-top: 96px; */
-}
+/* .portfplio-main {
+  padding-top: 96px;
+} */
 .navigation-list {
   margin-bottom: 72px;
   justify-content: center;
