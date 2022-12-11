@@ -250,6 +250,29 @@ border-radius: 4px;
   padding-top: 120px;
   padding-bottom: 120px;
 }
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+}
+.social-link {
+  background-color: #188ce8;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.social-item {
+  fill: currentColor;
+}
+a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 100%;
+  height: 100%; */
+}
 h1,
 h2,
 h3,
