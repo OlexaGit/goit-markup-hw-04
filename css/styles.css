@@ -288,6 +288,27 @@ border-radius: 4px;
   display: flex;
   padding: 16px 32px;
 }
+.customers-item {
+  color: #8e8f99;
+  fill: currentColor;
+}
+.customers-item:hover,
+.customers-item:focus {
+  color: var(--accent-color-logo);
+  fill: currentColor;
+}
+/* .block-customer:hover,
+.block-customer:focus {
+  color: var(--accent-color-logo);
+  fill: currentColor;
+  border: 1px solid #188ce8;
+} */
+.customers-link:hover,
+.customers-link:focus {
+  color: var(--accent-color-logo);
+  fill: currentColor;
+  border: 1px solid var(--accent-color-logo);
+}
 h1,
 h2,
 h3,
