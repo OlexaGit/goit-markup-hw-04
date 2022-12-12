@@ -257,34 +257,36 @@ border-radius: 4px;
   margin-top: 8px;
 }
 .social-link {
-  background-color: #188ce8;
+  background-color: var(--accent-color-btn);
   width: 40px;
   height: 40px;
   border-radius: 50%;
   margin: 0 auto;
 }
-/* -------alternative--------------
-    ------- hover, focus icon --------------
-
 .social-item {
-  fill: currentColor;
-  color: #4d5ae5;
-} */
-/* .social-item:hover,
-.social-item:focus {
-  fill: currentColor;
-  color: #188ce8;
-} 
-
-*/
-a .social-item {
-  color: #4d5ae5;
+  color: var(--accent-color-logo);
   fill: currentColor;
 }
-a:focus .social-item,
-a:hover .social-item {
-  color: #188ce8;
+.social-item:focus,
+.social-item:hover {
+  color: var(--accent-color-btn);
   fill: currentColor;
+}
+.customers-list {
+  margin: 0 auto;
+}
+.customers-link {
+  width: 168px;
+  height: 88px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
+.customers-link:not(:last-child) {
+  margin-right: 24px;
+}
+.block-customer {
+  display: flex;
+  padding: 16px 32px;
 }
 h1,
 h2,
