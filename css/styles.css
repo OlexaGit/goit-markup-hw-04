@@ -120,20 +120,32 @@ footer {
 }
 
 .social-link-footer {
+  display: flex;
   background-color: rgba(255, 255, 255, 0.1);
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
 }
-.social-item-footer {
+/* .soc-link {
+  display: flex;
+  background-color: var(--accent-color-logo);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+} */
+/* .social-item-footer {
   color: rgba(255, 255, 255, 0.1);
   fill: currentColor;
-}
-.social-item-footer:focus,
-.social-item-footer:hover {
-  color: #31d0aa;
+} */
+.social-link-footer:focus,
+.social-link-footer:hover {
+  background-color: #31d0aa;
   fill: currentColor;
+  outline-color: rgba(255, 255, 255, 0.1);
 }
 
 /* -------------  STUDIO  ------------------*/
@@ -144,6 +156,7 @@ footer {
   text-align: center;
   padding: 192px 0;
   max-width: 1440px;
+  height: 603px;
   margin: 0 auto;
   background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/people-office.jpg);
@@ -275,53 +288,50 @@ footer {
   align-items: center;
   justify-content: center;
   margin-top: 8px;
+  gap: 24px;
 }
-.social-link {
-  background-color: var(--accent-color-btn);
+.soc-link {
+  display: flex;
+  background-color: var(--accent-color-logo);
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
 }
 .social-item {
-  color: var(--accent-color-logo);
   fill: currentColor;
 }
-.social-item:focus,
-.social-item:hover {
-  color: var(--accent-color-btn);
+.soc-link:focus,
+.soc-link:hover {
+  background-color: var(--accent-color-btn);
   fill: currentColor;
+  outline-color: var(--accent-color-btn);
 }
 .customers-list {
-  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
 }
-.customers-link {
-  width: 168px;
-  height: 88px;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-}
-.customers-link:not(:last-child) {
-  margin-right: 24px;
-}
+
 .block-customer {
   display: flex;
   padding: 16px 32px;
+  color: #8e8f99;
+  align-items: center;
+  justify-content: center;
+  width: 168px;
+  height: 88px;
+  outline: 1px solid currentColor;
+  border-radius: 4px;
 }
 .customers-item {
-  color: #8e8f99;
   fill: currentColor;
 }
-.customers-item:hover,
-.customers-item:focus {
+.block-customer:hover,
+.block-customer:focus {
   color: var(--accent-color-logo);
-  fill: currentColor;
-}
-.customers-link:hover,
-.customers-link:focus {
-  color: var(--accent-color-logo);
-  fill: currentColor;
-  border: 1px solid var(--accent-color-logo);
 }
 h1,
 h2,
@@ -352,10 +362,10 @@ ol {
 .link {
   text-decoration: none;
 }
-.section {
+/* .section {
   padding-top: 120px;
   padding-bottom: 120px;
-}
+} */
 
 /* ------------  portfolio   ----------*/
 
